@@ -1,5 +1,5 @@
 body {
-    background-color: #E67BAB;
+    background-color: #090909;
     
 }
 
@@ -14,8 +14,8 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    box-shadow: 0 5px 0 white;
-    background: transparent;
+    box-shadow: 0 5px 0 rgb(255, 0, 0);
+    background: linear-gradient(rgba(211, 127, 127, 0.25));
     animation: animate 1s linear infinite;
 }
 
@@ -31,6 +31,17 @@ body {
     position: absolute;
     text-align: center;
     line-height: 200px;
+    animation:TextFade 1.5s ease-in-out infinite;
+}
+
+
+@keyframes TextFade{
+    0% , 100% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.25;
+    }
 }
 
 @keyframes animate {
